@@ -22,3 +22,32 @@ body {
   @media only screen and (max-width: 50em) {
     .container {
       grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content repeat(4, min-content); } }
+
+.discover {
+  grid-column: center-start / center-end; }
+
+.footer {
+  background-color: #254441;
+  grid-column: full-start / full-end; }
+
+.gallery {
+  grid-column: full-start / full-end; }
+
+.header {
+  grid-column: full-start / col-end 5; }
+
+.journal {
+  grid-column: center-start / center-end; }
+
+.powertrain {
+  background-color: #254441;
+  grid-column: col-start 6 / full-end; }
+
+.salesDepartment {
+  grid-column: full-start / full-end;
+  color: #254441; }
+
+.sidebar {
+  background-color: #43aa8b;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }
