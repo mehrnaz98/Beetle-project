@@ -49,7 +49,16 @@ body {
 
 .powertrain {
   background-color: #254441;
-  grid-column: col-start 6 / full-end; }
+  grid-column: col-start 6 / full-end;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content);
+  align-content: center; }
+  .powertrain--engine {
+    list-style: none;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.3; }
 
 .salesDepartment {
   grid-column: full-start / full-end;
