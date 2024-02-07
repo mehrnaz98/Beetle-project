@@ -25,6 +25,43 @@ body {
 
 .discover {
   grid-column: center-start / center-end; }
+  .discover__card {
+    color: #254441;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem 0; }
+    .discover__card:nth-of-type(odd) {
+      direction: rtl; }
+    .discover__card__img {
+      text-align: center; }
+      .discover__card__img img {
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        object-fit: cover; }
+      .discover__card__img div {
+        font-size: 2rem;
+        padding-top: 2rem; }
+    .discover__card__content {
+      text-align: left;
+      padding: 0 5rem; }
+      .discover__card__content p {
+        font-size: 1.6rem;
+        font-weight: 300; }
+  @media screen and (max-width: 50em) {
+    .discover__card {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
+      .discover__card__img div {
+        padding: 3rem 0; }
+      .discover__card__content {
+        padding: 0 0.5rem; } }
+  @media screen and (max-width: 37.5em) {
+    .discover {
+      grid-column: full-start / full-end; }
+      .discover__card__content {
+        text-align: center; } }
 
 .footer {
   background-color: #254441;
