@@ -225,10 +225,14 @@ body {
   align-content: center; }
   .powertrain--engine {
     list-style: none;
-    color: #ffffff;
+    color: #fff;
     font-size: 2rem;
     font-weight: 400;
     line-height: 2.3; }
+  @media only screen and (max-width: 50em) {
+    .powertrain {
+      grid-column: 1 / -1;
+      justify-content: center; } }
 
 .saledep-container {
   grid-column: full-start / full-end;
